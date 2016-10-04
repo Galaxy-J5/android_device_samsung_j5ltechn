@@ -39,6 +39,14 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+ADDITIONAL_BUILD_PROPERTIES += \
+    persist.radio.tdscdma_present=1
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.radio.tdscdma_present=1 \
+    persist.radio.multisim.config=dsds \
+    ro.multisim.simslotcount=2
+
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltechn/overlay
 
