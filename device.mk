@@ -45,7 +45,8 @@ ADDITIONAL_BUILD_PROPERTIES += \
 ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.radio.tdscdma_present=1 \
     persist.radio.multisim.config=dsds \
-    ro.multisim.simslotcount=2
+    ro.multisim.simslotcount=2 \
+    rild.libpath2=/system/lib/libsec-ril-dsds.so
 
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltechn/overlay
