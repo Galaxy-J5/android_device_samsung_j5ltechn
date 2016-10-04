@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 ADDITIONAL_BUILD_PROPERTIES += \
     persist.radio.tdscdma_present=1
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.radio.tdscdma_present=1 \
     persist.radio.multisim.config=dsds \
     ro.multisim.simslotcount=2
