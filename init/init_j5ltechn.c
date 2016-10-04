@@ -34,6 +34,12 @@
 #include "util.h"
 #include "init_msm.h"
 
+void init_dsds() {
+   property_set("ro.multisim.set_audio_params", "true");
+   property_set("ro.multisim.simslotcount", "2");
+   property_set("persist.radio.multisim.config", "dsds");
+}
+
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
 {
    char platform[PROP_VALUE_MAX];
@@ -59,6 +65,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
       property_set("ro.product.model", "SM-J5008");
       property_set("ro.product.device", "j5ltechn");
 
+      init_dsds();
    }
 
    property_get("ro.product.device", device);
