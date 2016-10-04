@@ -1,0 +1,2 @@
+add_lunch_combo cm_j5ltechn-userdebug
+add_lunch_combo cm_j5ltechn-eng
